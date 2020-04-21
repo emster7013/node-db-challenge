@@ -19,6 +19,12 @@ exports.up = function(knex) {
       table.text("description").notNullable();
       table.text("notes");
       table.boolean("completed").notNullable().defaultTo(false);
+      table.integer("proj_id")
+      .unsigned()
+      .references("id")
+      .inTable("project")
+      .onUpdate("CASCADE")
+      .onDelete("CASCADE")
   })
 };
 

@@ -7,8 +7,8 @@ module.exports = {
 
 function getAll() {
     return db("task")
-    .join("projects", "projects.id", "task.project_id")
-    .select("project.project_title", "project.project_descr", "task.task_descr", "task.task_notes", "task.complete")
+    .join("projects", "projects.id", "task.proj_id")
+    .select("projects.name", "projects.description", "task.description", "task.notes", "task.complete")
 }
 function post (task) {
     return db("task")
