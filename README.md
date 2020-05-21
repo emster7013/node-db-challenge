@@ -38,14 +38,23 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [x] Explain the difference between `Relational Databases` and `SQL`.
 
-- [ ] Why do tables need a `primary key`?
+Relational databases are databases that store their data in tables. SQL is the language used to manage databases.
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+- [x] Why do tables need a `primary key`?
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+To uniquely identify each entry in the database
 
+- [x] What is the name given to a table column that references the primary key on another table.
+
+Foreign Key
+
+- [x] What do we need in order to have a _many to many_ relationship between two tables.
+
+A third table linking the other tables together
+
+You would need to create a third table that has coresponding primary keys
 ## Minimum Viable Product
 
 Take the steps necessary to complete the project from scratch. Start by initializing your project with a `package.json` and go from there.
@@ -62,11 +71,12 @@ Complete the following tasks:
   - [ ] when adding a `task` the client must provide a description, the notes are optional.
   - [ ] when adding a `task` the client must provide the `id` of an existing project.
   - [ ] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
+
 - [ ] Build an API with endpoints for:
-  - [ ] adding resources.
+  - [x] adding resources.
   - [ ] retrieving a list of resources.
   - [ ] adding projects.
-  - [ ] retrieving a list of projects.
+  - [x] retrieving a list of projects.
   - [ ] adding tasks.
   - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
 
@@ -74,25 +84,25 @@ Complete the following tasks:
 
 A `project` is what needs to be done. We want to store the following data about a `project`:
 
-- [ ] a unique ID.
-- [ ] a name. This column is required.
-- [ ] a description.
-- [ ] a boolean that indicates if the project has been completed. This column cannot be NULL, the default value should be `false`.
+- [x] a unique ID.
+- [x] a name. This column is required.
+- [x] a description.
+- [x] a boolean that indicates if the project has been completed. This column cannot be NULL, the default value should be `false`.
 
 A `resource` is anything needed to complete a project, some examples are: a person, a tool, a meeting room or a software license. We want to store the following data about a `resource`:
 
-- [ ] a unique ID.
-- [ ] a name. This column is required.
-- [ ] a description.
+- [x] a unique ID.
+- [x] a name. This column is required.
+- [x] a description.
 
 The database should not allow resources with duplicate names.
 
 A `task` one of the steps needed to complete the project. We want to store the following data about an `task`.
 
-- [ ] a unique ID.
-- [ ] a description of what needs to be done. This column is required.
-- [ ] a notes column to add additional information.
-- [ ] a boolean that indicates if the task has been completed. This column cannot be NULL, the default value should be `false`.
+- [x] a unique ID.
+- [x] a description of what needs to be done. This column is required.
+- [x] a notes column to add additional information.
+- [x] a boolean that indicates if the task has been completed. This column cannot be NULL, the default value should be `false`.
 
 ## Stretch Problem
 
